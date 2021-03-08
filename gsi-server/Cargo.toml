@@ -7,3 +7,10 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# Rocket is used to provide the web API
+rocket = "0.4.7"
+
+[target.armv7-unknown-linux-gnueabihf.dependencies]
+# rppal provides a raspberry pi HAL for accessing UART connections on the PI,
+# if the EGSE being used is a PI.
+rppal = "0.11.3"
